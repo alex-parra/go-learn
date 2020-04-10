@@ -12,6 +12,10 @@ func main() {
 	s = s + ` ` + name // you cannot change string values by index, but you can get values instead.
 	fmt.Printf("%s\n", s)
 
+	var alex *string = new(string)
+	fmt.Println(alex)
+	fmt.Println(*alex)
+
 	fruits := []string{"Banana", "Maça", "Kiwi"}
 	fruits = append(fruits, "Uva")
 	fmt.Println(fruits[3])
